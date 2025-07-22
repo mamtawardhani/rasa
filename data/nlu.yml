@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+- intent: ask_question
+  examples: |
+    - What is photosynthesis?
+    - Define kinetic energy
+    - Tell me about friction
+    - What do you know about atoms?
+    - Can you explain Newton's third law?
+    - Explain Ohm's Law
+    - What does inertia mean?
+    - Give me the definition of gravity
+    - How would you define acceleration?
+    - I want to know what mass is
+
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Good morning
+    - Hey there
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+    - I’m leaving
+    - Talk to you later

@@ -1,0 +1,24 @@
+version: "3.1"
+
+intents:
+  - ask_question
+  - greet
+  - goodbye
+
+entities:
+  - topic
+
+actions:
+  - action_llama3_explain
+
+responses:
+  utter_greet:
+    - text: "Hello! Ask me any academic question."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_default:
+    - text: "Sorry, I couldn’t understand that. Try asking in a different way."
+
+slots: {}

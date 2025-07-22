@@ -1,0 +1,20 @@
+version: "3.1"
+
+stories:
+
+  - story: "greet and ask a question steps"
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_question
+      - action: action_llama3_explain
+
+  - story: "say goodbye steps"
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: "fallback message steps"
+    steps:
+      - intent: out_of_scope
+      - action: utter_default
